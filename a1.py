@@ -13,6 +13,7 @@ check, if you do not complete the generative AI portion of the assignment.
 """
 
 from typing import List, TypeVar
+import math
 
 
 def absolute(n: int) -> int:
@@ -25,7 +26,8 @@ def absolute(n: int) -> int:
     Returns:
         the absolute value of the passed in number
     """
-    raise NotImplementedError("absolute")
+    return math.sqrt(n**2)
+    # raise NotImplementedError("absolute")
 
 
 def factorial(n: int) -> int:
@@ -38,7 +40,14 @@ def factorial(n: int) -> int:
     Returns:
         factorial of the passed in number
     """
-    raise NotImplementedError("factorial")
+    nClone = 1
+    
+    for i in range(n, 0, -1):
+        print(i)
+        nClone *= i
+
+    return nClone
+    # raise NotImplementedError("factorial")
 
 
 T = TypeVar("T")
@@ -55,7 +64,12 @@ def every_other(lst: List[T]) -> List[T]:
     Returns:
         a list of every of other item in the original list starting with the first
     """
-    raise NotImplementedError("every_other")
+    returnList = ["placeholder"]
+    for i in range(0, len(lst), 2):
+        returnList.append(lst[i])
+    returnList.pop(0)
+    return returnList
+    # raise NotImplementedError("every_other")
 
 
 def sum_list(lst: List[int]) -> int:
