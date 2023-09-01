@@ -43,7 +43,6 @@ def factorial(n: int) -> int:
     nClone = 1
     
     for i in range(n, 0, -1):
-        print(i)
         nClone *= i
 
     return nClone
@@ -82,7 +81,11 @@ def sum_list(lst: List[int]) -> int:
     Returns:
         the sum of the passed in list
     """
-    raise NotImplementedError("sum_list")
+    sum = 0
+    for i in lst:
+        sum += i
+    return sum
+    # raise NotImplementedError("sum_list")
 
 
 def mean(lst: List[int]) -> float:
