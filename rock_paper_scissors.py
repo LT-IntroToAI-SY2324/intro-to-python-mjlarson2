@@ -1,13 +1,11 @@
 # We will write a rock paper scissors game in class - Complete it in this file
 import random
-player_choice = "rock"
-computer_choice = "paper"
 win = "You win!"
 lose = "You lose."
 
 # Function that retrieves the choices
 def get_choices():
-    player_choice = input("Enter choice:")
+    player_choice = input("Enter choice: ")
     options = ["rock", "paper", "scissors"]
     computer_choice = random.choice(options)
     choices = {"player": player_choice, "computer": computer_choice}
@@ -15,8 +13,8 @@ def get_choices():
     return choices
 
 def evaluation(choices:dict):
-    player = choices["player_choice"]
-    com = choices["computer_choice"]
+    player = choices["player"]
+    com = choices["computer"]
     if player == com: print("Tie")
     elif player == "rock":
         if com == "paper": print(lose)
@@ -28,3 +26,7 @@ def evaluation(choices:dict):
         if com == "rock": print(lose)
         elif com == "scissors": print(win)
         
+while(1 == 1):    
+    output = get_choices()
+    if output["player"] == "exit": break
+    evaluation(output)
