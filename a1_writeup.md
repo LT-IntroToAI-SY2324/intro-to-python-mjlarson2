@@ -13,11 +13,17 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 ## Reflection Questions
 
 1. What is your initial thoughts about the python programming language?
-
+Python is much simpler than some other languages: some things like working with strings are much easier than Java. It's somewhat
+strange to get used to.
 
 
 2. Describe some similarities and differences that you found between python and other programming languages you have used in the past?
-
+Python is much simpler than other languages I've used (Those being Java, C, and Javascript). All those other languages have a lot of
+similarities in how they work, and they're much more complicated than Python: Python doesn't need variable type declarations, for one.
+It also doesn't have case statements, which is interesting. In terms of similarities, though, all the fundamentals are the same. There's
+for loops and if statements, and functions are just like methods (but without an associated object).
 
 
 3. What are some things that you learned through this assignment?
+I've learned some python conventions: the use of a colon and indentation for the body of functions, for instance. I've also learned
+some more specific things, like that you can't externally modify the iterating variable of a loop.
