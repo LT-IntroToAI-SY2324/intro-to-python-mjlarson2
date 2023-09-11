@@ -26,7 +26,7 @@ def evaluation(choices:dict):
         if com == "rock": print(lose)
         elif com == "scissors": print(win)
         
-while(1 == 1):    
+while(True):    
     output = get_choices()
     if output["player"] == "exit": break
     evaluation(output)
