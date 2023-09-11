@@ -28,6 +28,7 @@ def toDecimal(binary:str):
         decimal += ( int(reversedBinary[i:i + 1]) * (2 ** i) )
     return decimal
 
+
 assert toDecimal("00000001") == 1
 assert toDecimal("10010110") == 150
 print("All tests passed!")
